@@ -1,0 +1,103 @@
+@font-face {
+    font-family: 'open sans light';
+    src: url('../fonts/opensans-light-webfont.eot');
+    src: url('../fonts/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/opensans-light-webfont.woff2') format('woff2'),
+    url('../fonts/opensans-light-webfont.woff') format('woff'),
+    url('../fonts/opensans-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    font: 18px 'open sans light', sans-serif;
+}
+.wrapper{
+    margin: 10px auto;
+    width: 800px;
+    padding-bottom: 40px;
+    box-shadow: 0 0 5px;
+}
+
+h1{
+    font: 18px 'open sans light', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+ul{
+    margin: 10px 0 10px 80px;
+}
+ol{
+    list-style-type: decimal;
+}
+.test_form__list{
+    margin-left: 80px;
+}
+.test_form__submit{
+    background: #0625df;
+    margin: 20px 0 0 270px;
+    padding: 10px 15px 10px 15px;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+}
+
+.test_form__submit:hover{
+    color: #000;
+
+}
+
+
+input[type="checkbox"] {
+    display: none;
+}
+label {
+    cursor: pointer;
+    display: block;
+    margin: 10px 0 10px 35px;
+    width: 250px;
+}
+
+.checkbox_span:before {
+    content: "";
+    display: inline-block;
+    height:15px;
+    width:15px;
+    background: gray;
+    border-radius: 3px ;
+    margin: 5px 10px 0 0;
+    vertical-align: top;
+}
+
+input[type="checkbox"]:checked + .checkbox_span:before {
+    background: #000;
+}
+
+button.close {
+    -webkit-appearance: none;
+    padding: 0;
+    cursor: pointer;
+    background: 0 0;
+    border: 0;
+}
+
+.close {
+    float: right;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+    opacity: .2;
+}
+.resault_fail{
+    color: red;
+}
+.modal-title, .modal-body{
+    text-align: center;
+}
+.modal-body{
+    font-size: 18px;
+}
